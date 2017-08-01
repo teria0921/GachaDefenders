@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.teria.gachadefenders.StartActivity">
+    -->
+
+    <!--
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/sedoric"
+        android:id="@+id/sedoricView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+        -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+    <TextView
+        android:id="@+id/timer"
+        android:layout_margin="20dp"
+        android:textSize="60sp"
+        android:textColor="#00f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/attackNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:text="投げつけたクリスタルの数："
+        />
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/sedoricView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/sedoric"/>
+
+        <ImageView
+            android:id="@+id/naguru_leftView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/naguru_rightView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            />
+
+
+    </FrameLayout>
+            <RelativeLayout
+                android:id="@+id/body"
+                android:gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:text="アタック"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="124dp"
+                android:layout_marginEnd="124dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/attackButton" />
+
+        <Button
+            android:text="投げつけ開始"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/attackButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="124dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/countDownButton" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
